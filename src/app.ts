@@ -13,6 +13,8 @@ app.use(express.urlencoded({ extended: true }));
 app.use(morgan("dev"));
 
 app.use("/health", async (_, res) => {
+  res.header("X-Version", "1.0.0");
+
   if (!(await healthCheck())) {
     return res.status(503).send("Service Unavailable");
   }
