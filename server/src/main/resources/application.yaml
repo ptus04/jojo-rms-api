@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: server
+  main:
+    lazy-initialization: true
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
