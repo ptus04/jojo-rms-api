@@ -10,3 +10,6 @@
 /httpRequests/
 # Ignore Copilot data migration files
 /copilot.data.migration.ask2agent.xml
+
+# Project-specific ignored files
+/sonarlint.xml
